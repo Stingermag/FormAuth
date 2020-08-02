@@ -1,6 +1,6 @@
 <template>
     <div class="allsections">
-        <form action="">
+        <form action="" onsubmit="alert('Клиент успешно создан')">
         <div class="section">
             <h2>Данные о пользователе</h2>
             <div class="inputtext">
@@ -114,7 +114,7 @@
         </div>
         
 
-             <input type="submit" >
+             <input type="submit" v-on:clich="$emit('remove-todo')">
          </form>
     </div>
 </template>

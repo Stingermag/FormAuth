@@ -2,7 +2,7 @@
   <div id="app">
     <h1>Форма создания клиента</h1>
     <hr>
-    <FormAuth />
+    <FormAuth v-on:remove-todo="rerto"/>
 
    
   </div>
@@ -16,6 +16,11 @@ export default {
   components: {
     FormAuth
    
+  },
+  methods:{
+    rerto(){
+      alert(432546757)
+    }
   }
 }
 </script>
